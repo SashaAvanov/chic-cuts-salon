@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="chicCuts" content="Website for Chic Cuts hair salon">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Chic Cuts Hair Salon</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz@12..72&display=swap" rel="stylesheet"> 
+	</head>
+
+	<body>
+        <!-- Header -->
+        <header id="home">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <select name="menu" id="dropDownMenu" onchange='javascript:location.href = this.value;'>
+                    <option value="#home">Home</option>
+                    <option value="#story">Our Story</option>
+                    <option value="#services">Services</option>
+                    <option value="#team">Our Team</option>
+                    <option value="#contact">Contact</option>
+                </select>
+            </nav>
+        </header>
+
+        <!-- Store Name -->
+        <main>
+            <section>
+                <h1>Chic Cuts</h1>
+                <span>Where classic meets modern.</span>
+            </section>
+        </main>
+
+        <!-- Our Story -->
+        <section id='story' class="story">
+            <section>
+                <h2>Our Story</h2>
+                <p>Welcome to Chic Cuts, where style meets sophistication in every snip. Chic Cuts got its start with a team of friends passionate about the intersection of classic and modern styles. From sleek bobs to vibrant balayage, we specialize in creating effortlessly chic looks that turn heads. Experience a new level of hair couture at Chic Cuts.</p>
+            </section>
+            <section>
+                <img src="chiccuts.jpg" alt="Three hairstylists working at their stations">
+            </section>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <section class="servicesList">
+                <section>
+                    <ul>   
+                        <li>Women's Styling: $65</li>
+                        <li>Hair Coloring:</li>
+                        <li class="subList">Highlights: $80+</li>    
+                        <li class="subList">Balayage: $100+</li>    
+                        <li>Hair Treatments: $30+</li>
+                        <li>Special Occasion Styling: $75+</li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li>Stylish Layers: $55</li>
+                        <li>Classic Haircut: $50</li>
+                        <li>Modern Fade: $60</li>
+                        <li>Trendy Bob: $45</li>
+                        <li>Men's Grooming: $40</li>
+                        <li>Beard Trims: $20</li>
+                    </ul>
+                </section>
+            </section>
+            <section class="offer">
+                <section class="offerDetails">
+                    <h2>First Time Offer!</h2>
+                    <p>-10% off on Styling, Color and Highlight</p>
+                    <p>-Call us for an appointment!</p>
+                </section>
+                <section>
+                    <img src="hairstyle3.jpg" alt="Back of person running fingers through hair">
+                </section>
+            </section>
+        </section>
+
+        <!-- Our Team -->
+        <section id='team' class="hairstylists">
+            <section>
+                <img src="team.jpg" alt="Three hairstylists posing">
+            </section>
+            <section>
+                <h2>Our Team</h2>
+                <p>Meet our talented team! With expertise in precision cuts and creative color, they're here to make your hair dreams a reality. From trendy styles to classic looks, they've got you covered with personalized service and a warm atmosphere. Come experience the skill and passion of our team for yourself.</p>
+            </section>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <section class="contactInfo">
+                <h2>Contact Us</h2>
+                <p>Call to schedule an appointment:</p>
+                <span>(916)-###-####</span>
+                <p>123 West St, Sacramento CA</p>
+            </section>
+            <section class="hours">
+                <h3>Hours</h3>
+                <span>Tuesday - Friday: 7:00am - 8:00pm</span>
+                <span>Saturday - Sunday: 9:00am - 6:00pm</span>
+            </section>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <span>Design: Sasha Avanov, 2024</span>
+        </footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

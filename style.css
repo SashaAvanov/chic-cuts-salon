@@ -1,0 +1,524 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font: 'Truculenta', sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Truculenta', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* --------------- Font Sizes --------------- */
+
+h1 {
+    font-size: 10rem;
+}
+
+main span {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+p, span, li, h3 {
+    font-size: 2.5rem
+}
+
+.offerDetails h2 {
+    font-size: 4rem;
+}
+
+footer span {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* --------------- Other --------------- */
+
+li {
+    list-style: none;
+}
+
+main, .services {
+    background: rgb(218, 220, 210);
+}
+
+header, nav, .contact, footer {
+    background: rgb(168, 181, 180);
+}
+
+.story, .hairstylists {
+    background: #fff;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* --------------- Header --------------- */
+
+header, nav {
+    width: 100%;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 80%;
+    height: 70px;
+    margin: 0 10%;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+select {
+    display: none;
+    margin: auto;
+
+}
+
+select a {
+    color: black;
+}
+
+/* --------------- Main --------------- */
+
+main {
+    display: flex;
+}
+
+main, main > section {
+    height: 70rem;
+}
+
+main > section {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------- Story --------------- */
+
+.story {
+    width: 100%;
+    height: 55rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.story section {
+    width: 35%;
+    display: block;
+}
+
+.story h2 {
+    padding-bottom: 5%;
+}
+
+.story section:first-of-type {
+    margin-right: 2%;
+}
+
+.story section:last-of-type {
+    margin-left: 2%;
+}
+
+.story img {
+    width: 100%;
+}
+
+/* --------------- Services --------------- */
+
+.services {
+    height: 130vh;
+}
+
+.services h2 {
+    text-align: center;
+    padding: 80px 0 50px;
+}
+
+.servicesList {
+    width: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 0 auto 30px;
+}
+
+.servicesList ul {
+    padding-left: 2%;
+    margin: 2% 0;
+    color: whitesmoke;
+}
+
+.servicesList > section {
+    width: 30rem;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(7, 7, 73), rgb(168, 181, 180) 95%);
+}
+
+.subList {
+    list-style-type: circle;
+    margin-left: 10%;
+}
+
+.servicesList > section,
+.offer {
+    border: 4px solid rgb(68, 63, 88);
+}
+
+.offer {
+    height: 50%;
+    width: 60%;
+    margin: 5% auto 0;
+    background: linear-gradient(45deg, rgb(173, 172, 172), rgb(73, 73, 127) 90%);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.offer > section:last-of-type {
+    width: 45%;
+}
+
+.offerDetails {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.offerDetails * {
+    margin: 2% 0;
+    color: #fff;
+}
+
+.offerDetails h2 {
+    text-decoration: underline;
+    padding: 0;
+}
+
+.offer img {
+    width: 75%;
+}
+
+/* --------------- Team --------------- */
+
+.hairstylists {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hairstylists section {
+    width: 35%;
+}
+
+.hairstylists img {
+    width: 90%;
+}
+
+/* --------------- Contact --------------- */
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
+.contact h2,
+.contact h3 {
+    text-decoration: underline;
+
+}
+
+.contact span {
+    display: block;
+}
+
+/* --------------- Footer --------------- */
+
+footer {
+    height: 5vh;
+}
+
+footer span {
+    display: block;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1000px) {
+
+    /* ------- Base Styles ------- */
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    p, span, .servicesList li, h3 {
+        font-size: 2rem
+    }
+
+    .offerDetails h2 {
+        font-size: 3rem;
+    }
+
+    /* ------- Layout/Other ------- */
+
+    .services {
+        height: 100vh;
+    }
+
+    .services > h2 {
+        padding: 80px 0 25px;
+    }
+
+    .servicesList {
+        width: 65%;
+    }
+
+    .servicesList > section {
+        width: 25rem;
+    }
+    
+    .offer {
+        height: 50%;
+        width: 75%;
+    }
+
+    .offer img {
+        width: 80%;
+    }
+    
+    footer span {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* ------- Base Styles ------- */
+
+    h1 {
+        font-size: 8rem;
+    }
+    
+    main span {
+        font-size: 4rem;
+    }
+
+    li {
+        font-size: 2rem
+    }
+
+    /* ------- Layout/Other ------- */
+
+    .servicesList {
+        width: 80%;
+    }
+
+    .story, .hairstylists {
+        width: 100%;
+        height: 70rem;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .story section, .hairstylists section {
+        width: 70%;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .story h2, .hairstylists h2 {
+        margin: 1% 0;
+        padding: 0;
+    }
+
+    .story section:first-of-type, .hairstylists img {
+        padding-bottom: 5%;
+    }
+
+    .hairstylists img {
+        margin: 0 auto;
+    }
+
+    .offer {
+        flex-flow: column nowrap;
+    }
+
+    .offer section:last-of-type {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 635px) {
+    .services {
+        height: 115vh;
+    }
+
+    .servicesList {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .servicesList > section {
+        margin: 0;
+    }
+
+    .servicesList > section:first-of-type {
+        margin-bottom: 2%;
+    }
+
+    .offer {
+        height: 40%;
+        width: 80%;
+    }
+
+    .contact {
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contactInfo {
+        margin-bottom: 2%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    /* ------- Base Styles ------- */
+
+    h1 {
+        font-size: 6rem;
+    }
+    
+    main span {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    p, span, li, h3 {
+        font-size: 1.5rem
+    }
+
+    .servicesList li {
+        font-size: 1.4rem;
+    }
+
+    .offerDetails h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact p,
+    .contact span,
+    .contact h3 {
+        font-size: 1.5rem;
+    }
+
+    footer span {
+        font-size: 1rem;
+    }
+
+    /* ------- Layout/Other ------- */
+
+    nav select {
+        display: block;
+        height: 40%;
+        width: 30%;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    main, main > section {
+        height: 55rem;
+    }
+
+    .story, .hairstylists {
+        height: 55rem;
+    }
+
+    .services {
+        height: 95vh;
+    }
+
+    .services h2 {
+        padding-bottom: 10px;
+    }
+
+    .offer img {
+        width: 90%;
+    }
+}
